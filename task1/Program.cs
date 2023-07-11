@@ -7,7 +7,8 @@
 int SumNums(int m, int n)
 {
     if (m == n) { return m; }
-    return n + SumNums(m, n - 1);
+    //return n + SumNums(m, n - 1); //еще вариант
+    return m + SumNums(m + 1, n);
 }
 
 //---------------------------------------------
